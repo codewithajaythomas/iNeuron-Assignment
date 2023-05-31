@@ -1,0 +1,16 @@
+package com.codewithajay.producer_cosumer;
+
+import java.util.PriorityQueue;
+
+public class Queue {
+	
+	private PriorityQueue<Integer> queue;
+
+	public Queue(PriorityQueue<Integer> queue) {
+		this.queue = queue;
+	}
+
+	public PriorityQueue<Integer> getQueue() {
+		return queue;
+	}
+}

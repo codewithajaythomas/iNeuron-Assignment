@@ -1,0 +1,5 @@
+package com.codewithajay.dao;
+
+public interface IStudentDao {
+
+}

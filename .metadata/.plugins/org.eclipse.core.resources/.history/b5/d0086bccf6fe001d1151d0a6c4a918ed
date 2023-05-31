@@ -1,0 +1,9 @@
+package com.codewithajay.repository;
+
+import java.util.List;
+
+import com.codewithajay.dto.Blog;
+
+public interface IBlogDao {
+	public Map<String,String> savePost();
+}

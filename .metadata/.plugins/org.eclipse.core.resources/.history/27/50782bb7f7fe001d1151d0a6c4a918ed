@@ -1,0 +1,19 @@
+package com.codewithajay.service;
+
+import java.util.Map;
+
+import com.codewithajay.dto.Blog;
+import com.codewithajay.repository.IBlogDao;
+
+public class BlogServiceImpl implements IBlogService {
+
+	private IBlogDao blogDao;
+
+	@Override
+	public String savePost(Blog post) {
+		
+		return null;
+	}
+
+
+}

@@ -1,0 +1,9 @@
+package com.codewithajay.repository;
+
+import java.util.List;
+
+import com.codewithajay.dto.Blog;
+
+public interface IStudentDao {
+	public List<Blog> searchStudent();
+}

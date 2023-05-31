@@ -1,0 +1,11 @@
+package com.codewithajay.service;
+
+import com.codewithajay.dto.Student;
+
+public interface IStudentService {
+	
+
+	public Student searchStudent(Integer sid);
+
+
+}

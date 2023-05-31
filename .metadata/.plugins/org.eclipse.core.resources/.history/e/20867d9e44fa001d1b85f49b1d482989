@@ -1,0 +1,9 @@
+package com.codewithajay.producer_cosumer;
+
+import java.util.Queue;
+
+public class Queue {
+	
+	private Queue<Integer> queue;
+
+}

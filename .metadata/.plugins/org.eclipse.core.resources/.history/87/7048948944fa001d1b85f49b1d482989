@@ -1,0 +1,7 @@
+package com.codewithajay.producer_cosumer;
+
+public class Queue {
+	
+	private Queue<Integer> queue;
+
+}

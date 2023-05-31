@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.codewithajay.threads.DemoAPp&apos; to &apos;DemoApp&apos;&#x0D;&#x0A;- Original project: &apos;JavaFinalProject-Q8&apos;&#x0D;&#x0A;- Original element: &apos;com.codewithajay.threads.DemoAPp&apos;&#x0D;&#x0A;- Renamed element: &apos;com.codewithajay.threads.DemoApp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DemoAPp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.codewithajay.threads{DemoAPp.java[DemoAPp" matchStrategy="1" name="DemoApp" qualified="false" references="true" similarDeclarations="false" stamp="1684767311107" textual="false" version="1.0"/>
+</session>

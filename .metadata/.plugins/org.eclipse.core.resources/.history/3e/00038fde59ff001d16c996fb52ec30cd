@@ -1,0 +1,17 @@
+package com.codewithajay;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.codewithajay.dao.IStudentDao;
+import com.codewithajay.model.Student;
+
+@SpringBootApplication
+public class JavaFinalProjectQ21Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(JavaFinalProjectQ21Application.class, args);
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.codewithajay.service;
+
+import java.util.List;
+
+import com.codewithajay.daofactory.BlogDaoFactory;
+import com.codewithajay.dto.Blog;
+import com.codewithajay.repository.IStudentDao;
+
+public class StudentServiceImpl implements IStudentService {
+
+	private IStudentDao stdDao;
+
+	@Override
+	public List<Blog> searchStudent() {
+		stdDao = BlogDaoFactory.getStudentDao();
+		return stdDao.searchStudent();
+	}
+
+}

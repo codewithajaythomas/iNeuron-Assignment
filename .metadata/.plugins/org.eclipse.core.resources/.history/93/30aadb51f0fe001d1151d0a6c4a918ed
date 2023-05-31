@@ -1,0 +1,18 @@
+package com.codewithajay.daofactory;
+
+import com.codewithajay.repository.IBlogDao;
+import com.codewithajay.repository.StudentDaoImpl;
+
+public class BlogDaoFactory {
+
+	private BlogDaoFactory() {}
+
+	private static IBlogDao studentDao = null;
+
+	public static IBlogDao getStudentDao() {
+		if (studentDao == null) {
+			studentDao = new StudentDaoImpl();
+		}
+		return studentDao;
+	}
+}

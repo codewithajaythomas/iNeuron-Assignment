@@ -1,0 +1,9 @@
+package com.codewithajay.service;
+
+import java.util.Map;
+
+public interface IBlogService {
+
+	public Map<String,String> savePost();
+
+}

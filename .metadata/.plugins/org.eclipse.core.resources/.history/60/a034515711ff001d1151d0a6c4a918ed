@@ -1,0 +1,7 @@
+package com.codewithajay.dao;
+
+import org.springframework.data.jpa.mapping.JpaPersistentEntity;
+
+public interface IStudentDao extends JpaPersistentEntity<int>{
+
+}

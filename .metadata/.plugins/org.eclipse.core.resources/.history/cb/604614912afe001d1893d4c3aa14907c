@@ -1,0 +1,7 @@
+package com.codewithajay.repository;
+
+import com.codewithajay.dto.Student;
+
+public interface IStudentDao {
+	public Student searchStudent(Integer sid);
+}

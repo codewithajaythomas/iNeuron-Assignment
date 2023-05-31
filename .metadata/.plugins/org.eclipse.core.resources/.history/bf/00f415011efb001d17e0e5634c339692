@@ -1,0 +1,18 @@
+package com.codewithajay.service;
+
+import com.codewithajay.daofactory.StudentDaoFactory;
+import com.codewithajay.dto.Student;
+import com.codewithajay.repository.IStudentDao;
+
+//service layer logic
+public class StudentServiceImpl implements IStudentService {
+
+	private IStudentDao stdDao;
+
+	@Override
+	public Student searchStudent(Integer sid) {
+		stdDao = StudentDaoFactory.getStudentDao();
+		return stdDao.searchStudent(sid);
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.codewithajay.service;
+
+import java.util.List;
+import java.util.Map;
+
+import com.codewithajay.daofactory.BlogDaoFactory;
+import com.codewithajay.dto.Blog;
+import com.codewithajay.repository.IBlogDao;
+
+public class BlogServiceImpl implements IBlogService {
+
+	private IBlogDao blogDao;
+
+	@Override
+	public Map<String, String> savePost() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

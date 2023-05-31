@@ -1,0 +1,17 @@
+package com.codewithajay.model;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class Orders {
+
+	private Integer orderid;
+	private String itemName;
+	private Integer quantity;
+	
+	private User user;
+
+}

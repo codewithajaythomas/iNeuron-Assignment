@@ -1,0 +1,17 @@
+1685453794311	Delete element
+1685454294615	Rename type 'StudentData'
+1685454312316	Rename type 'StudentDaoFactory'
+1685454337836	Rename type 'Student'
+1685454351917	Rename type 'IStudentDao'
+1685454363858	Rename type 'StudentDaoImpl'
+1685454375554	Rename type 'IStudentService'
+1685454387959	Rename type 'StudentServiceImpl'
+1685454398170	Rename type 'StudentServiceFactory'
+1685454569738	Rename field 'studentService'
+1685454582852	Rename method 'getStudentService'
+1685456990031	Rename field 'studentDao'
+1685457000560	Rename method 'getStudentDao'
+1685457081665	Rename local variable 'blog'
+1685459657838	Rename local variable 'blog'
+1685460841107	Copy packages
+1685460945110	Copy compilation unit

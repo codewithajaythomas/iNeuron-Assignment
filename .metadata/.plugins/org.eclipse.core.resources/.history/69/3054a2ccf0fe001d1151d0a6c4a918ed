@@ -1,0 +1,27 @@
+package com.codewithajay.servicefactory;
+
+
+import com.codewithajay.service.IBlogService;
+import com.codewithajay.service.BlogServiceImpl;
+
+
+//Abstraction logic of implementation
+public class BlogServiceFactory {
+
+	//make constuctor private to avoid object creation
+	private BlogServiceFactory() {
+
+	}
+
+	private static IBlogService studentService = null;
+
+	public static IBlogService getStudentService() {
+		
+		//singleton pattern code
+		if (studentService == null) {
+			studentService = new BlogServiceImpl();
+		}
+		return studentService;
+	}
+
+}

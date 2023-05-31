@@ -1,0 +1,52 @@
+package com.codewithajay.repository;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import com.codewithajay.dto.Blog;
+import com.codewithajay.util.JdbcUtil;
+
+public class BlogDaoImpl implements IBlogDao {
+
+	Connection connection = null;
+	PreparedStatement pstmt = null;
+	ResultSet resultSet = null;
+
+	@Override
+	public Map<String, String> savePost(Blog post) {
+		
+		String sqlSelectQuery = "insert into blog(title,description,content) values (?,?,?) ";
+		int status = 0;
+
+		try {
+			connection = JdbcUtil.getJdbcConnection();
+
+			if (connection != null)
+				pstmt = connection.prepareStatement(sqlSelectQuery);
+
+			if (pstmt != null) {
+				
+				pstmt.setString(1, post.getTitle());
+				pstmt.setString(2, post.getDescription());
+				pstmt.setString(3, post.getContent());
+				
+				status = pstmt.executeUpdate();
+			}
+
+			if (resultSet != null) {
+
+			}
+
+		} catch (SQLException | IOException e) {
+			e.printStackTrace();
+		}
+
+		return allStudents;
+	}
+}

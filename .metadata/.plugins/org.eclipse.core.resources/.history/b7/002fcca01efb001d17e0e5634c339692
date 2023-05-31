@@ -1,0 +1,32 @@
+package com.codewithajay.controller;
+
+import java.util.Scanner;
+
+import com.codewithajay.dto.Student;
+import com.codewithajay.service.IStudentService;
+import com.codewithajay.servicefactory.StudentServiceFactory;
+
+//controller logic
+public class TestApp {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter the student id :: ");
+		int sid = scanner.nextInt();
+
+		IStudentService studentService = StudentServiceFactory.getStudentService();
+		Student std = studentService.searchStudent(sid);
+		if (std != null) {
+			System.out.println(std);
+			System.out.println("SID\tSNAME\tSAGE\tSADDR");
+			System.out.println(std.getSid() + "\t" + std.getSname() + "\t" + std.getSage() + "\t" + std.getSaddress());
+		} else {
+			System.out.println("Record not found for the given id :: " + sid);
+		}
+
+		scanner.close();
+
+	}
+
+}

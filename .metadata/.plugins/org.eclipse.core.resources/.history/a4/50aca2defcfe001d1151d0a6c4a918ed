@@ -1,0 +1,11 @@
+package com.codewithajay.service;
+
+import java.util.Map;
+
+import com.codewithajay.dto.Blog;
+
+public interface IBlogService {
+
+	public String savePost(Blog post);
+
+}

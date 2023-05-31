@@ -1,0 +1,41 @@
+package com.codewithajay.findelements;
+
+import java.util.Scanner;
+
+public class DemoApp {
+	public static void main(String[] args) {
+		
+		String inputValues="";
+		int number=0,largest = 0,secondLargest = 0,smallest=-1,secondSmallest=-1;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a set of integers : ");
+		inputValues = scan.nextLine();
+		
+		for(String value : inputValues.split(" ")) {
+			try {
+				number = Integer.parseInt(value);
+			}catch(Exception e) {
+				continue;
+			}
+				
+			if(number>largest) {
+				secondLargest = largest;
+				largest = number;
+			}
+			
+			if(number<smallest || smallest==-1) {
+				if(secondSmallest == -1)
+					secondSmallest = smallest = number;
+				else {
+					secondSmallest = smallest;
+					smallest = number;
+				}
+			}
+		}
+		
+		System.out.println("Second largest : "+secondLargest);
+		System.out.println("Second samllest : "+secondSmallest);
+	}
+
+}

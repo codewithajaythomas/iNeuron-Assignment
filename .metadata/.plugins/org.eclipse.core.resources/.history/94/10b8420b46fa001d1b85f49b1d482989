@@ -1,0 +1,34 @@
+package com.codewithajay.producer_cosumer;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class DemoApp {
+	
+	public static void main(String[] args) {
+		
+		Queue queue = new Queue(new PriorityQueue<Integer>());
+		
+		Thread t1 = new Thread(()->{
+			int number = 0;
+			Queue<Integer> queue2 = null;
+			while(number!=100) {
+				number = (int) Math.random()*100;
+				queue2 = getQueue();
+				queue2.add(number);
+			}
+			
+		}); 
+		
+		Thread t2 = new Thread(()->{
+			int sum = 0;
+			Queue<Integer> queue3 = null;
+			while(number!=100) {
+				number = (int) Math.random()*100;
+				queue2 = getQueue();
+				queue2.add(number);
+			}
+			
+		});
+	}
+}
